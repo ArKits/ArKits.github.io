@@ -1,0 +1,120 @@
+
+<html>
+	<head>
+		<title>ArKits</title>
+		<script>
+			function timerFire()
+			{
+				var backgrounds = ['u.gif', 'waterfall.gif', 'waterfall2.gif',];
+				var index = Math.round((Math.random() * backgrounds.length)) - 1;
+
+				//We change the src of the image
+				document.body.style.backgroundImage = "url('" + backgrounds[index] + "')";
+
+			}
+
+		</script>
+		<style type="text/css">
+            /*
+                Background image cover style hack obtained from http://css-tricks.com/perfect-full-page-background-image/
+                and re-used in full.
+             */
+
+            BODY
+            {
+              background: url('waterfall.gif') no-repeat center center fixed;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            }
+
+        /*
+			BODY
+			{
+				background-image: url('waterfall.gif');
+				margin: 0;
+				padding: 0;
+			}
+        */
+			#content
+			{
+	width: 600px;
+	background-color: #333333;
+	height: 100%;
+	margin-left: 20%;
+	margin-top: 0%;
+	opacity: 0.9;
+	color: #FFF;
+			}
+
+			#content h1
+			{
+				font-family: Droid Sans; Verdana;
+				color: #333333;
+				padding: 1em;
+			}
+
+			/*
+				We set the top <h1></h1> margin to 0 so as to fix the box model
+			*/
+			#top
+			{
+				top-margin: -50px;
+			}
+			
+			#content h2
+			{
+				color: #CCC;
+
+	margin: 10px;
+
+	margin-top: -2em;
+	padding: 1em;
+			}
+
+			#content P
+			{
+	font-size: 13pt;
+	margin: 10px;
+
+	margin-top: -2em;
+	padding: 1em;
+			}
+
+		</style>
+		<script>
+			var height = window.innerHeight
+				|| document.documentElement.clientHeight
+				|| document.body.clientHeight;
+
+			var width  = window.innerWidth
+				|| document.documentElement.clientWidth
+				|| document.body.clientWidth;
+
+				//alert("Height is " + height);
+		</script>
+
+	<body onload="setInterval('timerFire()', 30000)">
+<!--
+    <boody>
+-->
+			<div id="content">
+			  <h1>&nbsp;</h1>
+			  <h1>&nbsp;</h1>
+			  <h1><img src="images/logo_white.png" width="344" height="164"  alt=""/><br>
+			    <br>
+			  Archit Khode</h1>
+			  <h2>Student | Geek<br>
+			  </h2>
+			  <h2>arkits@outlook.com			</h2>
+	</div>
+<!--
+			<div style="position: absolute; height: 100%; width:100%;  z-index: -1; top: 0; left: 0;margin: 0px;">
+			<img src="waterfall.gif" style="height:100%; width: 100%" id="bgpic">
+			</div>
+
+-->
+	</body>
+
+</html>
