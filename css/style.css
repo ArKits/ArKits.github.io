@@ -6,21 +6,95 @@
  * Made By MaterializeCSS.com
  */
 
+/*Sticky footer*/
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+
+
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 180px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+
+  #banner-img{
+    height: 170px;
+  }
+   
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+  #banner-img{
+    height: 150px;
+  }
+
+
+}
+
+@media only screen and (max-width : 800px) {
+
+
+  #banner-img{
+    height: 135px;
+  }
+
+
+}
+
+
+@media only screen and (max-width : 600px) {
+    .parallax-container {
+     height: 110px;
+  }
+ 
+
+  #banner-img{
+    height: 100px;
+  }
+}
+
 .icon-block {
   padding: 0 15px;
 }
-
-body{
-    background: #ffffff;
+.icon-block .material-icons {
+  font-size: inherit;
 }
 
-#index-banner{
-    background-image: url(http://i.imgur.com/W2uUJqL.png);
-  
-    background-position: center; 
-    background-size: 100%, 100%;
-  -webkit-box-shadow: 0px 3px 12px 0px rgba(50, 50, 50, 0.42);
--moz-box-shadow:    0px 3px 12px 0px rgba(50, 50, 50, 0.42);
-box-shadow:         0px 3px 12px 0px rgba(50, 50, 50, 0.42);
-
+footer.page-footer {
+  margin: 0;
 }
+
