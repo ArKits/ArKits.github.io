@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta charset="UTF-8">
+    <title>Nexus 6P Shipping Countdown</title>
+     
+    <!-- Mobile Specific Meta -->   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/TimeCircles.css">
+
+     <!-- Added google font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Lobster|Roboto+Light:400,700' rel='stylesheet' type='text/css'>
+
+ 
+  </head>
+ <body>
+ <div class="bg">
+	 <div class="bg-color">
+		  <div class="container content">
+	 
+				<div class="row">
+					<div class="sun clearfix">
+						<div class="col-sm-12">
+						   <h3 id="status">Hold tight</h3>
+						   <h2>We Nexus 6P in...</h2>        
+						</div>
+						<div id="right-block" class="col-sm-8">
+							<div class="row">
+							   <div class="col-sm-offset-4 col-sm-10">
+									<div class="timing">
+										<div id="count-down" data-date="2015-10-27 12:00:00">
+											
+										</div>
+									</div>
+									<!-- /.timing -->
+							   </div>
+							</div>     
+						</div>
+
+              <div class="col-sm-12">
+               <h3 id="status">Quick Links</h3>
+               
+               <a target="_parent" href="http://www.reddit.com/r/Nexus6p" class="collection-item"> <h4>/r/Nexus6P</h4> </a>     
+                <a target="_parent" href="http://www.reddit.com/r/Android" class="collection-item"> <h4>/r/Android</h4> </a>   
+                 <a target="_parent" href="https://store.google.com/orderhistory?hl=en" class="collection-item"> <h4>Google Store Order History</h4> </a> 
+            </div>
+
+
+					</div>
+				</div>
+			</div>
+			<!-- .container end here -->
+	 </div>
+ </div>
+   
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/TimeCircles.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    	$(function() {
+				// Invoke the plugin
+				$('input, textarea').placeholder();
+			});
+    </script>
+    <script>
+      $("#count-down").TimeCircles(
+       {   
+           circle_bg_color: "#8a7f71",
+           use_background: true,
+           bg_width: 1.0,
+           fg_width: 0.02,
+           time: {
+                Days: { color: "#fefeee" },
+                Hours: { color: "#fefeee" },
+                Minutes: { color: "#fefeee" },
+                Seconds: { color: "#fefeee" }
+            },
+            count_past_zero: false
+       }
+    );
+
+    </script>
+    
+  </body>
+</html>
